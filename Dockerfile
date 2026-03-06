@@ -4,8 +4,8 @@ WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
 
-# Étape 2 : Exécution avec Java
-FROM openjdk:21-jdk-slim
+# Étape 2 : Exécution avec Java (utilisation de eclipse-temurin comme dans Java EE)
+FROM eclipse-temurin:21-jdk
 COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "/app.jar"]
