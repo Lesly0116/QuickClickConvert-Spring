@@ -10,7 +10,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:exec</goal>
             </goals>
             <properties>
-                <exec.vmArgs></exec.vmArgs>
+                <exec.vmArgs>-DDB_URL="jdbc:mysql://localhost:3306/convertdocs?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true" -DDB_USER=root -DDB_PASSWORD=LeSlY1602 -DCONVERTAPI_SECRET=T8u4mn99kmAmccY8z0cFXBxl7JXPr7q3</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
                 <exec.appArgs></exec.appArgs>
                 <exec.mainClass>com.Lesly.ConvertirFichier.ConvertirFichierApplication</exec.mainClass>
@@ -27,7 +27,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:exec</goal>
             </goals>
             <properties>
-                <exec.vmArgs>-agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</exec.vmArgs>
+                <exec.vmArgs>-DDB_URL="jdbc:mysql://localhost:3306/convertdocs?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true" -DDB_USER=root -DDB_PASSWORD=LeSlY1602 -DCONVERTAPI_SECRET=T8u4mn99kmAmccY8z0cFXBxl7JXPr7q3 -agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
                 <exec.appArgs></exec.appArgs>
                 <exec.mainClass>com.Lesly.ConvertirFichier.ConvertirFichierApplication</exec.mainClass>
@@ -45,7 +45,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:exec</goal>
             </goals>
             <properties>
-                <exec.vmArgs></exec.vmArgs>
+                <exec.vmArgs>-DDB_URL="jdbc:mysql://localhost:3306/convertdocs?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true" -DDB_USER=root -DDB_PASSWORD=LeSlY1602 -DCONVERTAPI_SECRET=T8u4mn99kmAmccY8z0cFXBxl7JXPr7q3</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
                 <exec.mainClass>com.Lesly.ConvertirFichier.ConvertirFichierApplication</exec.mainClass>
                 <exec.executable>java</exec.executable>

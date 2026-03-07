@@ -22,17 +22,10 @@ public class HomeController {
         
     }
     
-    @GetMapping("/login")
-    public String login() {
-        
-        return "login"; 
-        
-    }
-    
     @GetMapping("/inscription")
     public String register() {
         
-        return "register";
+        return "inscription";
         
     }
 }
