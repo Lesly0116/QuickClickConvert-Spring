@@ -22,10 +22,4 @@ public class HomeController {
         
     }
     
-    @GetMapping("/inscription")
-    public String register() {
-        
-        return "inscription";
-        
-    }
 }
